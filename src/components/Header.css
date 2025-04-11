@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .logo {
+        width: 70px;
+        margin: 10px 0;
+
+    }
+
+    .title {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(209, 29, 48);
+        border-radius: 5px;
+        padding: 10px;
+        margin: 20px 10px;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    header {
+        justify-content: flex-start;
+        gap: 30px;
+
+        .logo {
+            margin: 20px 0 20px 30px;
+            width: 100px;
+
+        }
+
+        .title {
+            width: 400px;
+        }
+
+    }
+
+    nav {
+
+        a {
+            font-size: 2rem;
+            margin: 0 20px;
+            padding: 15px;
+
+        }
+    }
+
+
+}
