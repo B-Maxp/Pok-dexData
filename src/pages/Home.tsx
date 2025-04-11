@@ -6,6 +6,7 @@ interface CardData {
     name: string;
     image: string;
     id: number;
+    pokedexId: number;
 
 }
 
@@ -13,23 +14,27 @@ interface CardData {
 function Home() {
     const [pokedex, setPokedex] = useState<CardData[]>([]);
 
-    
+
     useEffect(() => {
         fetch("https://pokebuildapi.fr/api/v1/pokemon/generation/1")
-        .then((response) => response.json())
-        .then((data) => setPokedex(data))
+            .then((response) => response.json())
+            .then((data) => setPokedex(data))
     }, [])
-    
-    return (
-        <main>
-            {pokedex.map((el) => {
-                return (
-                    <Card key={el.id} image={el.image} name={el.name}/>
-                )
-            })}
-            
 
-        </main>
+    return (
+        <>
+            <input type="text" placeholder='Nom ou numéro' />
+
+            <main>
+                {pokedex.map((el) => {
+                    return (
+                        <Card key={el.id} image={el.image} name={el.name} pokedexId={el.pokedexId}/>
+                    )
+                })}
+
+
+            </main>
+        </>
     )
 }
 

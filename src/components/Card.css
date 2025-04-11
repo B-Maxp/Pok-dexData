@@ -1,14 +1,57 @@
-main{
+
+input {
+    width: 200px;
+    height: 30px;
+    margin: 20px 0;
+}
+
+
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
-figure{
-    background-color: gray;
-    border-radius: 10px;
+
+figure {
     padding: 10px;
-    img{
+    margin: 0;
+
+    img {
+        background-color: gray;
+        border-radius: 10px;
         width: 100px;
     }
+
+    p {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    input {
+        width: 300px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin: 40px 0;
+    }
+    figure {
+        padding: 10px;
+        margin: 20px;
+        width: 25%;
+    
+        img {
+            width: 200px;
+        }
+
+        figcaption {
+            font-size: 1.5rem;
+        }
+    
+        
+    
+    }
+
+
 }
