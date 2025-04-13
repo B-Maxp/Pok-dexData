@@ -21,9 +21,10 @@ function Home() {
             .then((data) => setPokedex(data))
     }, [])
 
+
     return (
         <>
-            <input type="text" placeholder='Nom ou numéro' />
+            <input type="text" placeholder='Nom ou numéro' maxLength={15} />
 
             <main>
                 {pokedex.map((el) => {

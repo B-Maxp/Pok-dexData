@@ -4,7 +4,7 @@ header {
     justify-content: space-evenly;
 
     .logo {
-        width: 70px;
+        width: 50px;
         margin: 10px 0;
 
     }
@@ -16,6 +16,11 @@ header {
     h1 {
         font-size: 2rem;
     }
+
+    .login {
+        width: 50px;
+    }
+
 
 }
 
@@ -39,7 +44,7 @@ nav {
 
 @media screen and (min-width: 600px) {
     header {
-        justify-content: flex-start;
+        justify-content: space-between;
         gap: 30px;
 
         .logo {
@@ -50,6 +55,12 @@ nav {
 
         .title {
             width: 400px;
+        }
+
+        .login {
+            width: 100px;
+            margin: 0 20px 30px 0;
+
         }
 
     }

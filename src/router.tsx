@@ -3,6 +3,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import Pokédex from "./pages/Pokédex";
 import Article from "./pages/Article";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
             {
                 path:"/Pokédex",
                 element: <Pokédex/>
+            },
+            {
+                path:"/Login",
+                element: <Login/>
             },
             {
                 path:"/Article/:id",
